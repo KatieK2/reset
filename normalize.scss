@@ -1,4 +1,6 @@
-/* HTML5 normalize, originally from html5doctor.com Reset Stylesheet v1.6.1 by Richard Clark - http://richclarkdesign.com @rich_clark */
+/* HTML5 normalize, originally from html5doctor.com Reset Stylesheet v1.6.1 by Richard Clark - http://richclarkdesign.com @rich_clark
+   Additional input from https://github.com/necolas/normalize.css
+  */
 
 $color: black;             // Used for styling hr, ins and mark elements.
 $highlight-color: #ff0;    // Used for styling ins and mark elements.
@@ -112,4 +114,9 @@ input, select {
 button { // From https://github.com/murtaugh/HTML5-Reset/
   width: auto; 
   overflow: visible;
+}
+
+audio:not([controls]) { // normalize.css
+    display: none;
+    height: 0;
 }
