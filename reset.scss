@@ -20,7 +20,7 @@ body {
 }
 
 article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {
-	display: block;
+  display: block;
 }
 
 nav ul {
@@ -109,6 +109,7 @@ input, select {
   vertical-align: middle;
 }
 
-button {
-  width: auto; overflow: visible;   // From https://github.com/murtaugh/HTML5-Reset/
+button { // From https://github.com/murtaugh/HTML5-Reset/
+  width: auto; 
+  overflow: visible;
 }
