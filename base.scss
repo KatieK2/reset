@@ -37,5 +37,5 @@ svg:not(:root) {
 
 @media print {
 	img { max-width: 100% !important; }		//  Make all images fit inside parent when printing.
-	p, h2, h3 { orphans: 3; widows: 3; }	//  Prevent lost text bits when a page breaks.
+	p, h2, h3 { orphans: 3; widows: 3; }	//  Prevent lost text bits when a page breaks.  
 }
