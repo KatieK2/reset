@@ -1,41 +1,41 @@
-/*	HTML5 Base styling. Components from:
-	http://davidwalsh.name/html5-boilerplate
-	http://github.com/murtaugh/HTML5-Reset
+/*  HTML5 Base styling. Components from:
+    http://davidwalsh.name/html5-boilerplate
+    http://github.com/murtaugh/HTML5-Reset
 */
 
 html {
-	font-size: 100%;
-	overflow-y: scroll;						//	Forces a horizontal scrollbar
-	-webkit-text-size-adjust: 100%;			//  Prevents mobile text-resize
-	-ms-text-size-adjust: 100%;				//  Prevents mobile text-resize
+  font-size: 100%;
+  overflow-y: scroll;                       // Forces a horizontal scrollbar
+  -webkit-text-size-adjust: 100%;           // Prevents mobile text-resize
+  -ms-text-size-adjust: 100%;               // Prevents mobile text-resize
 }
 
 ::selection {
-	background:lightblue;					// Changes selection color (cursor highlight) for webkit, opera, IE9
+  background: lightblue;                    // Changes selection color (cursor highlight) for webkit, opera, IE9
 }
 ::-moz-selection {
-	background:lightblue;					// Changes selection color (cursor highlight) for mozilla
+  background: lightblue;                    // Changes selection color (cursor highlight) for mozilla
 }
 
 img {
-	-ms-interpolation-mode: bicubic;		//  Makes IE7 scale images more nicely.
+  -ms-interpolation-mode: bicubic;          // Makes IE7 scale images more nicely.
 }
 
 th {
-	font-weight: bold;
-	vertical-align: bottom;
+  font-weight: bold;
+  vertical-align: bottom;
 }
 
 td {
-	font-weight: normal;
-	vertical-align: top;
+  font-weight: normal;
+  vertical-align: top;
 }
 
 svg:not(:root) {
-	overflow: hidden;						//  Fixes IE9's overflow bug for SVG elements.
+  overflow: hidden;                         // Fixes IE9's overflow bug for SVG elements.
 }
 
 @media print {
-	img { max-width: 100% !important; }		//  Make all images fit inside parent when printing.
-	p, h2, h3 { orphans: 3; widows: 3; }	//  Prevent lost text bits when a page breaks.  
+  img { max-width: 100% !important; }       // Make all images fit inside parent when printing.
+  p, h2, h3 { orphans: 3; widows: 3; }      // Prevent lost text bits when a page breaks.  
 }
