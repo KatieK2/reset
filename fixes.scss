@@ -1,0 +1,25 @@
+/*  Many common browser styling fixes. Components from:
+    http://davidwalsh.name/html5-boilerplate
+    http://github.com/murtaugh/HTML5-Reset
+*/
+
+html {
+  -webkit-text-size-adjust: 100%;           /* Prevents mobile text-resize */
+  -ms-text-size-adjust: 100%;               /* Prevents mobile text-resize */
+}
+
+::selection {
+  background: lightblue;                    /* Changes selection color (cursor highlight) for Webkit, Opera, IE9 */
+}
+::-moz-selection {
+  background: lightblue;                    /* Changes selection color (cursor highlight) for FF */
+}
+
+svg:not(:root) {
+  overflow: hidden;                         /* Fixes IE9's overflow bug for SVG elements. */
+}
+
+@media print {
+  img { max-width: 100% !important; }       /* Make all images fit inside parent when printing. */
+  p, h2, h3 { orphans: 3; widows: 3; }      /* Prevent lost text bits when a page breaks. */
+}

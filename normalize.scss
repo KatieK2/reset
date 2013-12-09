@@ -2,19 +2,18 @@
    Additional input from https://github.com/necolas/normalize.css
   */
 
-$color: black;             // Used for styling hr, ins and mark elements.
-$highlight-color: #ff0;    // Used for styling ins and mark elements.
+$color: black;                        // Used for styling hr, ins and mark elements.
+$highlight-color: #ff0;               // Used for styling ins and mark elements.
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,
-button, input, select, textarea // From https://github.com/murtaugh/HTML5-Reset/
- {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {                // Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
 body {
@@ -112,7 +111,7 @@ input, select {
 }
 
 button { // From https://github.com/murtaugh/HTML5-Reset/
-  width: auto; 
+  width: auto;
   overflow: visible;
 }
 
