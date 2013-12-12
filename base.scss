@@ -37,6 +37,22 @@ svg:not(:root) {
 }
 
 @media print {
-  img { max-width: 100% !important; }       /* Make all images fit inside parent when printing. */
+  * {                                       /* No colors or effects on printed content. */
+    color: #000 !important;
+    background-image: none !important;
+    background-color: #FFF !important;
+    text-shadow: none !important;
+    border-color: #000 !important;
+    }
+  a { text-decoration: none; }              /* No underline on printed links. */
+  a[href]:after {                           /* Print href after anchors. */
+    content: " (" attr(href) ")";
+    font-size: smaller;
+    color: gray;
+    }
+  img {                                     /* Make all images fit inside parent when printing. */
+    border: none; 
+    max-width: 100% !important;
+    }
   p, h2, h3 { orphans: 3; widows: 3; }      /* Prevent lost text bits when a page breaks. */
 }
