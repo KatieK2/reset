@@ -54,5 +54,5 @@ svg:not(:root) {
     border: none; 
     max-width: 100% !important;
     }
-  p, h2, h3 { orphans: 3; widows: 3; }      /* Prevent lost text bits when a page breaks. */
+  p, h1, h2, h3 { orphans: 3; widows: 3; }      /* Prevent lost text bits when a page breaks. */
 }
