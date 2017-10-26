@@ -20,12 +20,13 @@ body {
   line-height: 1;
 }
 
-article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-nav ul {
+nav ul, header ul {
   list-style: none;
+  padding-left: none;
 }
 
 blockquote, q {
