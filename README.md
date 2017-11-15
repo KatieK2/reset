@@ -9,5 +9,5 @@ Also includes demo HTML files showing all elements and their styling.
 
 Browser support: IE8, FF4, SF4 and above.
 
-### Sass
+## Sass
 Compile .scss files with: `sass --watch ./:./ --style compact`
